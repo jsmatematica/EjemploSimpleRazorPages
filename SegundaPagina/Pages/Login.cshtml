@@ -1,0 +1,27 @@
+﻿@page
+@model SegundaPagina.Pages.LoginModel
+@{
+}
+
+<div class="container border" style="padding:20px">
+    <form method="post">
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="credentials.Username"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for="credentials.Username" />
+            </div> 
+        </div> <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="credentials.Password"></label>
+                </div> <div class="col-5">
+                     <input type="password" asp-for="credentials.Password" /> </div>
+                </div>
+               <div class="col-2">
+                   <input type="submit" class="btn btn-primary" value="Login" />
+               </div>
+               <div class="col-5">
+               </div>
+    </form>
+</div>

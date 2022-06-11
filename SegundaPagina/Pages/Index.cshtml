@@ -1,0 +1,13 @@
+﻿@page
+@model IndexModel
+
+
+<p>@{ ViewBag.mensaje = Model.mensaje;}@ViewBag.mensaje</p>
+
+<form method="post">
+    <input asp-for=@Model.mensaje value="" />
+    <input type="submit" name="name" value="enviar" />
+</form>
+
+<a href="/Mensaje/8">content</a>
+<a href="Login">Login</a>
